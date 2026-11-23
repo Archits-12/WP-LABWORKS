@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Successful - Lab 11</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="card success-card">
+      <div class="status-icon">✓</div>
+      <span class="badge badge-success">Authentication Verified</span>
+      <h1>Login Successful</h1>
+      <p class="subtitle">Your credentials matched the database record.</p>
+
+      <div class="user-details">
+        <div class="detail-row">
+          <span>Logged in as</span>
+          <strong id="displayUser">-</strong>
+        </div>
+        <div class="detail-row">
+          <span>Role</span>
+          <strong id="displayRole">-</strong>
+        </div>
+        <div class="detail-row">
+          <span>Login Time</span>
+          <strong id="displayTime">-</strong>
+        </div>
+      </div>
+
+      <button id="logoutBtn" class="btn-secondary">Logout</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Archit Singhania</strong> &nbsp;|&nbsp; USN: <strong>24BTTSN001</strong></p>
+    <p class="footer-sub">Web Programming — Lab 11: User Validation Web Application</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
