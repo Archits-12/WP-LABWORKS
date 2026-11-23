@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopXML - Online Shopping | Lab 12</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="./index.html" class="brand">Shop<span>XML</span></a>
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./cart.html">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        <li><a href="./checkout.html">Checkout</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./auth.html" id="navAuthLink">Login / Register</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <header class="hero">
+    <div class="container hero-content">
+      <span class="badge">Web Programming • Lab 12</span>
+      <h1>Modern Tech Essentials, Powered by XML</h1>
+      <p>Browse our curated catalog loaded dynamically from <code>products.xml</code>, manage your cart, and check out seamlessly.</p>
+      <div class="hero-actions">
+        <a href="./products.html" class="btn-primary">Shop All Products</a>
+        <a href="./auth.html" class="btn-outline">Login / Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-block">
+      <div class="section-header">
+        <div>
+          <h2>Featured Products</h2>
+          <p class="subtitle">Loaded live from <code>products.xml</code></p>
+        </div>
+        <a href="./products.html" class="link-arrow">View All Products →</a>
+      </div>
+      <div id="featuredProducts" class="product-grid">
+        <p class="muted">Loading catalog from XML...</p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>XML Data Driven</h3>
+          <p>All product listings and detail views are fetched and parsed dynamically from <code>products.xml</code>.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Persistent Cart</h3>
+          <p>Add, update quantities, and proceed to checkout with real-time subtotal, GST, and shipping totals.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Instant Auth</h3>
+          <p>Register new customer accounts or sign in to prefill checkout details automatically.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Archit Singhania</strong> &nbsp;|&nbsp; USN: <strong>24BTTSN001</strong></p>
+    <p class="footer-sub">Web Programming — Lab 12: Online Shopping Website (HTML, CSS, JavaScript &amp; XML)</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

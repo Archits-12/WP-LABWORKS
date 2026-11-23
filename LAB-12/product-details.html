@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - ShopXML | Lab 12</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="./index.html" class="brand">Shop<span>XML</span></a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html" class="active">Products</a></li>
+        <li><a href="./cart.html">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        <li><a href="./checkout.html">Checkout</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./auth.html" id="navAuthLink">Login / Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page-content">
+    <a href="./products.html" class="back-link">← Back to Products</a>
+    <div id="productDetailContainer" class="detail-wrapper">
+      <p class="muted">Loading product details from XML...</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Archit Singhania</strong> &nbsp;|&nbsp; USN: <strong>24BTTSN001</strong></p>
+    <p class="footer-sub">Web Programming — Lab 12: Online Shopping Website (HTML, CSS, JavaScript &amp; XML)</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

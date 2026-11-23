@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <product id="P101">
+    <name>AeroBook Pro 14 Laptop</name>
+    <category>Electronics</category>
+    <price>74999</price>
+    <rating>4.8</rating>
+    <stock>12</stock>
+    <badge>Bestseller</badge>
+    <icon>laptop</icon>
+    <color>#eef2ff</color>
+    <shortDesc>14-inch OLED ultrabook with 16GB RAM and 512GB NVMe SSD.</shortDesc>
+    <description>Built for developers and creators, the AeroBook Pro 14 combines a crisp 2.8K OLED display, all-day 14-hour battery life, and an anodized aluminum chassis weighing just 1.25 kg.</description>
+    <specs>
+      <spec>14-inch 2.8K OLED 90Hz Display</spec>
+      <spec>16GB LPDDR5 RAM &amp; 512GB PCIe Gen4 SSD</spec>
+      <spec>Up to 14 hours battery with 65W USB-C fast charging</spec>
+      <spec>2x Thunderbolt 4, HDMI 2.1, Wi-Fi 6E</spec>
+    </specs>
+  </product>
+
+  <product id="P102">
+    <name>Pulse ANC Wireless Headphones</name>
+    <category>Audio</category>
+    <price>6499</price>
+    <rating>4.6</rating>
+    <stock>25</stock>
+    <badge>Top Rated</badge>
+    <icon>headphones</icon>
+    <color>#ecfeff</color>
+    <shortDesc>Hybrid active noise cancellation with 45-hour battery life.</shortDesc>
+    <description>Tune out distractions with 40dB hybrid active noise cancellation, custom 40mm dynamic drivers, memory-foam ear cushions, and dual-device Bluetooth 5.3 multipoint connectivity.</description>
+    <specs>
+      <spec>40dB Hybrid Active Noise Cancellation</spec>
+      <spec>45 hours playback (ANC off) / 32 hours (ANC on)</spec>
+      <spec>Bluetooth 5.3 with dual-device pairing</spec>
+      <spec>10-minute quick charge gives 5 hours playback</spec>
+    </specs>
+  </product>
+
+  <product id="P103">
+    <name>ChronoFit S2 Smartwatch</name>
+    <category>Wearables</category>
+    <price>4999</price>
+    <rating>4.5</rating>
+    <stock>18</stock>
+    <badge>New</badge>
+    <icon>watch</icon>
+    <color>#f0fdf4</color>
+    <shortDesc>AMOLED fitness watch with GPS, SpO2, and 10-day battery.</shortDesc>
+    <description>Track workouts, sleep stages, heart rate, and blood oxygen on a bright 1.43-inch AMOLED touchscreen with built-in GPS and 5ATM water resistance.</description>
+    <specs>
+      <spec>1.43-inch Always-On AMOLED Display</spec>
+      <spec>Built-in Multi-Satellite GPS &amp; 100+ sports modes</spec>
+      <spec>5ATM water resistance &amp; 24/7 health tracking</spec>
+      <spec>Up to 10 days battery life on a single charge</spec>
+    </specs>
+  </product>
+
+  <product id="P104">
+    <name>KeyCraft K75 Mechanical Keyboard</name>
+    <category>Accessories</category>
+    <price>5299</price>
+    <rating>4.9</rating>
+    <stock>9</stock>
+    <badge>Hot Pick</badge>
+    <icon>keyboard</icon>
+    <color>#fef3c7</color>
+    <shortDesc>75% wireless hot-swappable mechanical keyboard with tactile switches.</shortDesc>
+    <description>Engineered with gasket-mount acoustics, PBT double-shot keycaps, and tri-mode wireless connectivity (Bluetooth, 2.4GHz, USB-C) for effortless switching across setups.</description>
+    <specs>
+      <spec>75% compact layout with rotary volume knob</spec>
+      <spec>Hot-swappable PCB with pre-lubed tactile switches</spec>
+      <spec>Tri-mode: USB-C wired, 2.4GHz dongle, Bluetooth 5.1</spec>
+      <spec>4000mAh battery with customizable per-key backlight</spec>
+    </specs>
+  </product>
+
+  <product id="P105">
+    <name>Nomad Tech Backpack 24L</name>
+    <category>Accessories</category>
+    <price>2799</price>
+    <rating>4.7</rating>
+    <stock>30</stock>
+    <badge>Value</badge>
+    <icon>backpack</icon>
+    <color>#fdf2f8</color>
+    <shortDesc>Water-resistant commuter backpack with padded 16-inch laptop sleeve.</shortDesc>
+    <description>Designed for college and office commutes, featuring ballistic water-repellent fabric, a suspended laptop compartment, cable organizer pouch, and breathable mesh back panel.</description>
+    <specs>
+      <spec>24L capacity with dedicated 16-inch laptop sleeve</spec>
+      <spec>Water-resistant 900D polyester shell &amp; YKK zippers</spec>
+      <spec>Hidden anti-theft passport pocket &amp; luggage strap</spec>
+      <spec>Ergonomic padded shoulder straps</spec>
+    </specs>
+  </product>
+
+  <product id="P106">
+    <name>Lumina LED Desk Lamp</name>
+    <category>Electronics</category>
+    <price>1899</price>
+    <rating>4.4</rating>
+    <stock>22</stock>
+    <badge>Study Essential</badge>
+    <icon>lamp</icon>
+    <color>#f5f3ff</color>
+    <shortDesc>Eye-care stepless dimming desk lamp with wireless phone charger.</shortDesc>
+    <description>Reduce eye strain during late-night study sessions with flicker-free high-CRI LED lighting, 5 color temperature presets, touch dimming slider, and an integrated 10W Qi charging pad.</description>
+    <specs>
+      <spec>5 color modes (3000K warm to 6000K daylight)</spec>
+      <spec>Flicker-free CRI 95+ eye-protection LED array</spec>
+      <spec>Built-in 10W Qi wireless charging base + USB-A port</spec>
+      <spec>Foldable aluminum arm with 45-minute auto-off timer</spec>
+    </specs>
+  </product>
+</catalog>

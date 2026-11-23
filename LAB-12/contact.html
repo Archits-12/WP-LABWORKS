@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - ShopXML | Lab 12</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="./index.html" class="brand">Shop<span>XML</span></a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./cart.html">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        <li><a href="./checkout.html">Checkout</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+        <li><a href="./auth.html" id="navAuthLink">Login / Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page-content">
+    <div class="page-title-row">
+      <div>
+        <span class="badge">Customer Support</span>
+        <h1>Contact Us</h1>
+        <p class="subtitle">Have questions about an order or product? Send us a message.</p>
+      </div>
+    </div>
+
+    <div class="two-col-grid">
+      <section class="card">
+        <h2>Send a Message</h2>
+        <div id="contactAlert" class="alert hidden" role="alert"></div>
+
+        <form id="contactForm" class="spaced-form">
+          <div class="form-group">
+            <label for="contactName">Your Name</label>
+            <input type="text" id="contactName" placeholder="Archit Singhania" required>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <select id="contactSubject">
+              <option value="Order Inquiry">Order Inquiry</option>
+              <option value="Product Question">Product Question</option>
+              <option value="Returns & Refunds">Returns &amp; Refunds</option>
+              <option value="Technical Support">Technical Support</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Submit Inquiry</button>
+        </form>
+      </section>
+
+      <aside class="card">
+        <h2>Store Information</h2>
+        <p class="subtitle">Reach our support team Monday through Saturday.</p>
+
+        <div class="info-box">
+          <div class="detail-row">
+            <span>Email</span>
+            <strong>support@shopxml.example</strong>
+          </div>
+          <div class="detail-row">
+            <span>Phone</span>
+            <strong>+91 80 4123 9876</strong>
+          </div>
+          <div class="detail-row">
+            <span>Address</span>
+            <strong>Bengaluru, Karnataka</strong>
+          </div>
+          <div class="detail-row">
+            <span>Support Hours</span>
+            <strong>9:00 AM – 7:00 PM IST</strong>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Archit Singhania</strong> &nbsp;|&nbsp; USN: <strong>24BTTSN001</strong></p>
+    <p class="footer-sub">Web Programming — Lab 12: Online Shopping Website (HTML, CSS, JavaScript &amp; XML)</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

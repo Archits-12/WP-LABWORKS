@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - ShopXML | Lab 12</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="./index.html" class="brand">Shop<span>XML</span></a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html" class="active">Products</a></li>
+        <li><a href="./cart.html">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        <li><a href="./checkout.html">Checkout</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./auth.html" id="navAuthLink">Login / Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page-content">
+    <div class="page-title-row">
+      <div>
+        <span class="badge">XML Product Catalog</span>
+        <h1>All Products</h1>
+        <p class="subtitle" id="xmlStatus">Fetching items from <code>products.xml</code>...</p>
+      </div>
+      <span id="productCount" class="count-pill">0 items</span>
+    </div>
+
+    <div class="filter-bar">
+      <input type="text" id="searchInput" placeholder="Search products by name or description...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+      </select>
+      <select id="sortSelect">
+        <option value="default">Sort: Featured</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating-desc">Rating: Highest First</option>
+      </select>
+    </div>
+
+    <div id="productsGrid" class="product-grid">
+      <p class="muted">Loading products...</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Archit Singhania</strong> &nbsp;|&nbsp; USN: <strong>24BTTSN001</strong></p>
+    <p class="footer-sub">Web Programming — Lab 12: Online Shopping Website (HTML, CSS, JavaScript &amp; XML)</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

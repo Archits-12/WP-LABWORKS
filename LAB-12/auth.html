@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login &amp; Register - ShopXML | Lab 12</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="./index.html" class="brand">Shop<span>XML</span></a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./cart.html">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        <li><a href="./checkout.html">Checkout</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./auth.html" id="navAuthLink" class="active">Login / Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container center-layout page-content">
+    <div class="card auth-card">
+      <div id="loggedInPanel" class="hidden center-text">
+        <div class="status-icon icon-success">✓</div>
+        <span class="badge badge-success">Signed In</span>
+        <h2>Welcome, <span id="profileName">User</span></h2>
+        <p class="subtitle" id="profileEmail"></p>
+        <div class="auth-actions">
+          <a href="./products.html" class="btn-primary">Browse Products</a>
+          <button type="button" id="logoutUserBtn" class="btn-danger">Logout</button>
+        </div>
+      </div>
+
+      <div id="authFormsPanel">
+        <div class="tab-bar">
+          <button type="button" id="loginTab" class="tab-btn active">Login</button>
+          <button type="button" id="registerTab" class="tab-btn">Register</button>
+        </div>
+
+        <div id="authAlert" class="alert hidden" role="alert"></div>
+
+        <!-- Login Form -->
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Email Address</label>
+            <input type="email" id="loginEmail" placeholder="archit@shopxml.com" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter password" required>
+          </div>
+          <button type="submit" class="btn-primary full-width">Sign In</button>
+
+          <details class="demo-creds">
+            <summary>Demo Login Credentials</summary>
+            <p>Email: <code>archit@shopxml.com</code> &nbsp;|&nbsp; Password: <code>archit123</code></p>
+          </details>
+        </form>
+
+        <!-- Register Form -->
+        <form id="registerForm" class="hidden">
+          <div class="form-group">
+            <label for="regName">Full Name</label>
+            <input type="text" id="regName" placeholder="e.g., Archit Singhania" required>
+          </div>
+          <div class="form-group">
+            <label for="regEmail">Email Address</label>
+            <input type="email" id="regEmail" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="regPassword">Password (min 6 characters)</label>
+            <input type="password" id="regPassword" minlength="6" placeholder="Create password" required>
+          </div>
+          <div class="form-group">
+            <label for="regConfirm">Confirm Password</label>
+            <input type="password" id="regConfirm" minlength="6" placeholder="Re-enter password" required>
+          </div>
+          <button type="submit" class="btn-primary full-width">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Archit Singhania</strong> &nbsp;|&nbsp; USN: <strong>24BTTSN001</strong></p>
+    <p class="footer-sub">Web Programming — Lab 12: Online Shopping Website (HTML, CSS, JavaScript &amp; XML)</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
