@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<employees>
+
+    <employee>
+        <id>101</id>
+        <name>Rahul Sharma</name>
+        <department>Computer Science</department>
+        <designation>Software Engineer</designation>
+        <salary>60000</salary>
+    </employee>
+
+    <employee>
+        <id>102</id>
+        <name>Priya Singh</name>
+        <department>Information Technology</department>
+        <designation>Web Developer</designation>
+        <salary>55000</salary>
+    </employee>
+
+    <employee>
+        <id>103</id>
+        <name>Arjun Kumar</name>
+        <department>Human Resources</department>
+        <designation>HR Manager</designation>
+        <salary>70000</salary>
+    </employee>
+
+    <employee>
+        <id>104</id>
+        <name>Neha Patel</name>
+        <department>Finance</department>
+        <designation>Accountant</designation>
+        <salary>50000</salary>
+    </employee>
+
+    <employee>
+        <id>105</id>
+        <name>Vikram Rao</name>
+        <department>Marketing</department>
+        <designation>Marketing Executive</designation>
+        <salary>52000</salary>
+    </employee>
+
+</employees>

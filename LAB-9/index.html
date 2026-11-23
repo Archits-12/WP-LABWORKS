@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Programming Lab 9</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 25px;
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #8b0000;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 20px;
+            font-size: 16px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004c99;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            background-color: #8b0000;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            border: 1px solid #555;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            margin-top: 30px;
+            border-top: 1px solid #aaa;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>WEB PROGRAMMING LAB 9</h1>
+
+        <h2>Employee Information</h2>
+
+        <button onclick="loadXML()">Display Employee Data</button>
+
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Designation</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+
+            <tbody id="employeeData">
+            </tbody>
+        </table>
+
+        <footer>
+            <b>Archit Singhania - 24BTTSN001</b>
+        </footer>
+
+    </div>
+
+    <script>
+        function loadXML() {
+
+            let xhr = new XMLHttpRequest();
+
+            xhr.open("GET", "employees.xml", true);
+
+            xhr.onreadystatechange = function () {
+
+                if (xhr.readyState === 4 && xhr.status === 200) {
+
+                    let xml = xhr.responseXML;
+
+                    let employees =
+                        xml.getElementsByTagName("employee");
+
+                    let table =
+                        document.getElementById("employeeData");
+
+                    table.innerHTML = "";
+
+                    for (let i = 0; i < employees.length; i++) {
+
+                        let id =
+                            employees[i]
+                            .getElementsByTagName("id")[0]
+                            .textContent;
+
+                        let name =
+                            employees[i]
+                            .getElementsByTagName("name")[0]
+                            .textContent;
+
+                        let department =
+                            employees[i]
+                            .getElementsByTagName("department")[0]
+                            .textContent;
+
+                        let designation =
+                            employees[i]
+                            .getElementsByTagName("designation")[0]
+                            .textContent;
+
+                        let salary =
+                            employees[i]
+                            .getElementsByTagName("salary")[0]
+                            .textContent;
+
+                        let row = table.insertRow();
+
+                        row.insertCell(0).innerHTML = id;
+                        row.insertCell(1).innerHTML = name;
+                        row.insertCell(2).innerHTML = department;
+                        row.insertCell(3).innerHTML = designation;
+                        row.insertCell(4).innerHTML = salary;
+                    }
+                }
+            };
+
+            xhr.send();
+        }
+    </script>
+
+</body>
+</html>
