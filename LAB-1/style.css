@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 55px 20px 35px;
+    background: #172554;
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.book-grid {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.book-card {
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+}
+
+.book-cover,
+.large-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e7ff;
+    border-radius: 10px;
+}
+
+.book-cover {
+    height: 180px;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.book-card h2 {
+    margin-bottom: 8px;
+    color: #172554;
+}
+
+.book-card p {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+}
+
+.details {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 45px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.large-cover {
+    min-height: 360px;
+    font-size: 110px;
+}
+
+.details h1 {
+    color: #172554;
+    margin-bottom: 25px;
+}
+
+.details p {
+    margin: 14px 0;
+    line-height: 1.6;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #172554;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.back-button:hover {
+    background: #1e3a8a;
+}
+
+@media (max-width: 700px) {
+    .details {
+        grid-template-columns: 1fr;
+        margin: 25px;
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}
