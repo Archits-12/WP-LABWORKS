@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Page - Lab 10 (Part A)</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="top-right-time">
+    <span>Start Time:</span>
+    <strong id="startTimeDisplay">-</strong>
+  </div>
+
+  <main class="container center-layout">
+    <div class="card center-card">
+      <span class="badge badge-success">Part A • Active Session</span>
+      <h1>Hello, <span id="helloUserName">User</span>!</h1>
+      <p class="subtitle">Your session is currently active. Your name and start time are stored in session storage.</p>
+
+      <div class="info-box">
+        <div class="detail-row">
+          <span>Session Started</span>
+          <strong id="sessionStartFull">-</strong>
+        </div>
+        <div class="detail-row">
+          <span>Status</span>
+          <strong>Logged In</strong>
+        </div>
+      </div>
+
+      <button type="button" id="logoutBtn" class="btn-danger">Logout</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Archit Singhania</strong> &nbsp;|&nbsp; USN: <strong>24BTTSN001</strong></p>
+    <p class="footer-sub">Web Programming — Lab 10 (Part A)</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

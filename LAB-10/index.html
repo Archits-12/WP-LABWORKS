@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 10 - Web Programming</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="page-header">
+    <span class="badge">Web Programming • Lab 10</span>
+    <h1>PHP Web Applications Demo</h1>
+    <p class="subtitle">Session Tracking, Date &amp; Time Display, and Age Authorization</p>
+  </header>
 
+  <main class="container grid-layout">
+    <!-- Part A: Name Input & Session Tracking -->
+    <section class="card">
+      <span class="badge">Part A • Sessions</span>
+      <h2>Hello &amp; Session Tracker</h2>
+      <p class="subtitle">Submits your name to a Hello page with start time and tracks total duration on logout.</p>
+
+      <form action="./hello.html" method="GET" class="lab-form">
+        <div class="form-group">
+          <label for="sessionName">Enter Your Name</label>
+          <input
+            type="text"
+            id="sessionName"
+            name="name"
+            placeholder="e.g., Archit Singhania"
+            required
+          >
+        </div>
+        <button type="submit" class="btn-primary">Submit &amp; Start Session</button>
+      </form>
+    </section>
+
+    <!-- Part B: Current Date, Time and Day -->
+    <section class="card">
+      <span class="badge badge-info">Part B • Date &amp; Time</span>
+      <h2>Current Date, Time &amp; Day</h2>
+      <p class="subtitle">Displays the current system date, live time, and day of the week.</p>
+
+      <div class="info-box">
+        <div class="detail-row">
+          <span>Current Date</span>
+          <strong id="currentDate">-</strong>
+        </div>
+        <div class="detail-row">
+          <span>Current Time</span>
+          <strong id="currentTime">-</strong>
+        </div>
+        <div class="detail-row">
+          <span>Current Day</span>
+          <strong id="currentDay">-</strong>
+        </div>
+      </div>
+
+      <button type="button" id="refreshTimeBtn" class="btn-secondary">Refresh Date &amp; Time</button>
+    </section>
+
+    <!-- Part C: Age Authorization -->
+    <section class="card">
+      <span class="badge badge-warn">Part C • Validation</span>
+      <h2>Age Authorization Check</h2>
+      <p class="subtitle">Checks whether the visitor is 18 or older before granting access to the site.</p>
+
+      <form action="./age-result.html" method="GET" class="lab-form">
+        <div class="form-group">
+          <label for="ageName">Enter Your Name</label>
+          <input
+            type="text"
+            id="ageName"
+            name="name"
+            placeholder="e.g., Archit"
+            required
+          >
+        </div>
+        <div class="form-group">
+          <label for="userAge">Enter Your Age</label>
+          <input
+            type="number"
+            id="userAge"
+            name="age"
+            min="1"
+            max="120"
+            placeholder="e.g., 20"
+            required
+          >
+        </div>
+        <button type="submit" class="btn-primary">Check Authorization</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Archit Singhania</strong> &nbsp;|&nbsp; USN: <strong>24BTTSN001</strong></p>
+    <p class="footer-sub">Web Programming — Lab 10</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
