@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Programming Lab 4</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #8b0000;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin: 20px;
+        }
+
+        #capital {
+            color: #0066cc;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            border-top: 1px solid #aaa;
+            padding-top: 15px;
+        }
+    </style>
+
+    <script>
+        function showCapital() {
+            let country = document.getElementById("country").value;
+            let capital = document.getElementById("capital");
+
+            if (country === "India") {
+                capital.innerHTML = "New Delhi";
+            }
+            else if (country === "USA") {
+                capital.innerHTML = "Washington, D.C.";
+            }
+            else if (country === "France") {
+                capital.innerHTML = "Paris";
+            }
+            else if (country === "Japan") {
+                capital.innerHTML = "Tokyo";
+            }
+            else if (country === "Australia") {
+                capital.innerHTML = "Canberra";
+            }
+            else {
+                capital.innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>WEB PROGRAMMING LAB 4</h1>
+
+        <h2>Select a Country</h2>
+
+        <select id="country" onchange="showCapital()">
+            <option value="">-- Select Country --</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="France">France</option>
+            <option value="Japan">Japan</option>
+            <option value="Australia">Australia</option>
+        </select>
+
+        <span id="capital"></span>
+
+        <footer>
+            <b>Archit Singhania - 24BTTSN001</b>
+        </footer>
+
+    </div>
+
+</body>
+</html>
